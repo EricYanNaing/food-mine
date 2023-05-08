@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { FoodService } from './services/food-services';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, RatingModule],
   providers: [FoodService],
   bootstrap: [AppComponent],
 })
