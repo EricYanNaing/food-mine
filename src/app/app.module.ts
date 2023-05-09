@@ -11,9 +11,17 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './component/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './component/tags/tags.component';
+import { FoodPageComponent } from './component/foodPage/foodPage.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent, TagsComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    SearchComponent,
+    TagsComponent,
+    FoodPageComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, RatingModule, FormsModule],
   providers: [FoodService],
   bootstrap: [AppComponent],

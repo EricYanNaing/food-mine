@@ -7,6 +7,10 @@ import { Tag } from '../shared/models/tags';
 export class FoodService {
   constructor() {}
 
+  getFoodId(id : number) : Food {
+    return this.getAll().find(food => food.id == id)!
+  }
+
   getAllFoodsBySearchTerm(searchTerm: string) {
     return this.getAll().filter((food) =>
       food.name.toLowerCase().includes(searchTerm.toLowerCase())
