@@ -8,10 +8,12 @@ import { FoodService } from './services/food-services';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
 import { RatingModule } from 'ng-starrating';
+import { SearchComponent } from './component/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, RatingModule],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent],
+  imports: [BrowserModule, AppRoutingModule, RatingModule, FormsModule],
   providers: [FoodService],
   bootstrap: [AppComponent],
 })
